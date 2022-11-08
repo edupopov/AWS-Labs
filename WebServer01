@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# Cria um servidor web básico com uma mensagem simples - util para laboratorios Route53, NLB, etc
+###################################################################################################
+# Cria um servidor web básico com uma mensagem simples - util para laboratorios Route53, NLB, etc #
+# Pode ser usado no momento da criação da instancia EC2 em user data info                         #
+# Este cod foi adaptado para funcionar em linux RedHat e CentOS                                   #
+###################################################################################################
 
 yum update -y
 yum install -y httpd
