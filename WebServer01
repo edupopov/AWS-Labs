@@ -11,4 +11,6 @@ yum update -y
 yum install -y httpd
 systemctl start httpd
 systemctl enable httpd
-echo '<center><h1>SITE DO EDU POPOVICI - TESTE LAB - SERVER 01:</h1></center>' > /var/www/html/index.htm
+httpd -v
+touch /var/www/html/index.htm
+echo "<center><h1>SITE DO EDU POPOVICI - TESTE LAB - SERVER 01:</h1></center>" > /var/www/html/index.htm
