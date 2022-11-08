@@ -7,7 +7,6 @@
 # Criado por Eduardo Popovici                                                                     #
 ###################################################################################################
 
-sudo amazon-linux-extras install php8.0
 yum update -y
 yum install -y httpd
 systemctl start httpd
