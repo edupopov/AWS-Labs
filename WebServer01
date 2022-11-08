@@ -4,6 +4,7 @@
 # Cria um servidor web básico com uma mensagem simples - util para laboratorios Route53, NLB, etc #
 # Pode ser usado no momento da criação da instancia EC2 em user data info                         #
 # Este cod foi adaptado para funcionar em linux RedHat e CentOS                                   #
+# Criado por Eduardo Popovici                                                                     #
 ###################################################################################################
 
 yum update -y
