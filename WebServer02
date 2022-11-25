@@ -1,7 +1,18 @@
 #!/bin/bash
+
+# Update da máquina
 yum update -y
+
+# Instalação de ferramentas AWS
+yum install -y amazon-efs-utils
+
+# Instalação apache
 yum install httpd -y
+
+# Criação de index
 cd /var/www/html
 echo "<html><h1>Servidor-01-lab-Eduardo-Popovici</h1></html>" > index.html
+
+# Subir e fixar serviço
 systemctl start httpd.service
 systemctl enable httpd.service
