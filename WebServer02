@@ -16,3 +16,8 @@ echo "<html><h1>Servidor-01-lab-Eduardo-Popovici</h1></html>" > index.html
 # Subir e fixar serviço
 systemctl start httpd.service
 systemctl enable httpd.service
+
+# Adicionar pasta de ponto de montagem NFS-EFS
+cd /
+mkdir EFS-Point
+echo "Diretório EFS-Point utilizado para ponto de montagem de lab AWS EFS" > leia-me-EFS.txt
